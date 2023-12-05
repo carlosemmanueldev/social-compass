@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Desafio de Código - SocialCompass
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## :octocat: Integrantes
 
-Currently, two official plugins are available:
+[Carlos Emmanuel](https://github.com/carlosemmanueldev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## :page_with_curl: Sobre o Projeto
 
-## Expanding the ESLint configuration
+O projeto consiste em um sistema de cadastro de usuários, onde o usuário pode se cadastrar e fazer login, e após o
+login, o usuário pode fazer postagens, e ver as postagens de outros usuários.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## :round_pushpin: Objetivos
 
-- Configure the top-level `parserOptions` property like this:
+* Criar um sistema de cadastro de usuários
+* Criar um sistema de login
+* Criar um sistema de postagens
+* Criar um sistema de visualização de postagens
+* Criar um sistema de logout
+* Criar um sistema de edição de perfil
+* Criar um sistema de exclusão de perfil
+* Criar um sistema de exclusão de postagens
+* Criar um sistema de edição de postagens
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## :hammer_and_wrench: Tecnologias Usadas
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### [Typescript](https://www.typescriptlang.org)
+
+* Versão 5.2.2
+
+### HTML
+
+### CSS
+
+## :construction: Status do Projeto
+
+Finalizado
+
+## :keyboard: Acessando o sistema
+
+Você deve rodar o projeto com run npm dev antes para que o projeto funcione corretamente
