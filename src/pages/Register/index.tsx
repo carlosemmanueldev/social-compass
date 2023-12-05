@@ -2,9 +2,10 @@ import Input from "../../components/Inputs/Input.tsx";
 import Container from "../../components/Container/Container.tsx";
 import Button from "../../components/Button/Button";
 import HeaderMessage from "../../components/HeaderMessage/HeaderMessage.tsx";
-import { Link } from "react-router-dom";
+import {Link, Navigate, useNavigate} from "react-router-dom";
 import { useState } from "react";
 import {User, Lock1, Calendar1, FingerCricle, ShieldTick, Sms} from "iconsax-react";
+import {register} from "../../api/auth.ts";
 
 interface UserProps {
     name: string;
@@ -16,10 +17,60 @@ interface UserProps {
 }
 
 function Register() {
+    const navigate = useNavigate();
     const [user, setUser] = useState(
         { name: '', username: '', birth: '', email: '', password: '', confirmPassword: '' } as UserProps)
     const [userError, setUserError] = useState(false);
 
+    function handleRegister(){
+        if(!user.name){
+            setUserError(true)
+        }else{
+            setUserError(false)
+        }
+
+        if(!user.username){
+            setUserError(true)
+        }else{
+            setUserError(false)
+        }
+
+        if(!user.birth){
+            setUserError(true)
+        }else{
+            setUserError(false)
+        }
+
+        if(!user.email){
+            setUserError(true)
+        }else{
+            setUserError(false)
+        }
+
+        if(!user.password){
+            setUserError(true)
+        }else{
+            setUserError(false)
+        }
+
+        if(!user.confirmPassword){
+            setUserError(true)
+        }else{
+            setUserError(false)
+        }
+
+        if(
+            user.name &&
+            user.username &&
+            user.birth &&
+            user.email &&
+            user.password &&
+            user.confirmPassword
+        ){
+            register(user.name, user.username, user.email, user.password, user.confirmPassword, user.birth)
+            navigate("/")
+        }
+    }
 
     return (
         <Container>
@@ -80,7 +131,7 @@ function Register() {
                     />
 
                     <Button 
-                        onClick={()=>alert("aaaaa")}
+                        onClick={handleRegister}
                     >
                         Registrar-se
                     </Button>
