@@ -37,4 +37,4 @@ Finalizado
 
 ## :keyboard: Acessando o sistema
 
-Você deve rodar o projeto com run npm dev antes para que o projeto funcione corretamente
+Você deve rodar o projeto com npm run dev antes para que o projeto funcione corretamente
