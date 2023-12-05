@@ -1,0 +1,22 @@
+.comments {
+  display: flex;
+  gap: 16px;
+
+  &_content {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    align-items: flex-start;
+
+    &_p {
+      font-weight: 300;
+      font-size: 11px;
+    }
+  }
+
+  &_image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+}

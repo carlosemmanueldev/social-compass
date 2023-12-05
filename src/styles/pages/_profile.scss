@@ -1,0 +1,37 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    gap: 36px;
+
+    &_about-posts {
+        display: flex;
+        gap: 24px;
+    }
+
+    &_posts {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 24px;
+        gap: 16px;
+    }
+
+    &_titles {
+        display: flex;
+        color: $yellow;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    &_p-bold {
+        font-weight: 800;
+    }
+
+    &_line {
+        border-bottom: 1px solid $white;
+        opacity: 0.1;
+        width: 90%;
+        align-self: center;
+    }
+}

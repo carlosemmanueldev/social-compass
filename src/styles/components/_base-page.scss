@@ -1,0 +1,8 @@
+.base-page{
+        display: flex;
+
+    &_children{
+        width: 100vw;
+        background: $grey-900;
+    }
+}

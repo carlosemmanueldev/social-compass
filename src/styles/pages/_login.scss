@@ -1,0 +1,57 @@
+.login-page{
+    display: flex;
+
+    .login-page-info {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        background: linear-gradient(90deg, $grey-600 0%, $grey-900 100%);
+        justify-content: center;
+
+        &_title {
+            color: $white;
+            min-width: 474px;
+        }
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &_form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &_register {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            color: $white;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            a:hover {
+                color: #c0c0c0;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+
+    &_image {
+        flex: 1;
+        overflow: hidden;
+        height: 100vh;
+
+        &_bg {
+            width: 100%;
+        }
+    }
+
+}

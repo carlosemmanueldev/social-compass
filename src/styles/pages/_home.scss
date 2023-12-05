@@ -1,0 +1,28 @@
+.home {
+   display: flex;
+
+  &_main {
+    width: 80vw;
+    background: $grey-900;
+  }
+
+  &_content {
+    display: flex;
+    padding: 32px;
+    gap: 36px;
+  }
+
+  &_posts {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    gap: 24px;
+  }
+
+  &_topics {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 15vw;
+  }
+}

@@ -1,0 +1,37 @@
+.button-default{
+    padding: 14px 16px;
+    border-radius: 50px;
+    color: $white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    
+    &.primary{
+        border: 1px solid $orange;
+        background: $gradient-orange;
+        transition: all 0.3s ease-in-out;
+        
+        &:hover{
+            color: $black;
+        }
+    }
+    
+    &.secondary{
+        border: 1px solid $grey-900;
+        background: $gradient-grey;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            color: $orange;
+        }
+
+    }
+
+    .loader-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,53 @@
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .input-default{
+        border: 2px solid $white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 16px;
+        border-radius: 50px;
+        // margin: 15px 0;
+    
+        input{
+            border:0;
+            width: 100%;
+            background-color: transparent;
+            padding: 14px 16px;
+            color: $grey-300;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+            transition: all 0.3s ease-out;
+    
+            &:focus-visible, &:focus{
+                outline: none;
+                color: $white;
+            }
+    
+            &::placeholder{
+                color: $grey-300;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    
+        &.error{
+            border-color: $yellow;
+        }
+    }
+
+    &_error-message{
+        text-align: center;
+        color: $yellow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}

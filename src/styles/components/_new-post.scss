@@ -1,0 +1,46 @@
+.new-post {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+
+  &_add {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &_image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  &_form {
+    width: 100%;
+  }
+
+  &_input {
+    border-radius: 46px;
+    padding: 8px 24px;
+    background: $grey-650;
+    border: none;
+    color: $white;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &_actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_icons {
+    display: flex;
+    gap: 24px;
+    color: $grey-200;
+  }
+}

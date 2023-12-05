@@ -1,0 +1,38 @@
+.user-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+
+    &_images {
+        position: relative;
+        width: 100%;
+    }
+
+    &_cover {
+        width: inherit;
+        border-radius: 16px;
+    }
+
+    &_picture {
+        position: absolute;
+        width: 15%;
+        border-radius: 50%;
+        top: 200px;
+        left: 60px;
+    }
+
+    &_bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-block-end: 24px;
+        color: $yellow;
+
+        &_p {
+            font-size: 14px;
+            font-weight: 300;
+            color: #ac8725;
+        }
+    }
+}

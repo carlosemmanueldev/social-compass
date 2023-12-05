@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  background: $grey-700;
+  border-top: 2px solid $grey-600;
+  border-right: 2px solid $grey-600;
+  border-bottom: 2px solid $grey-600;
+  justify-content: space-between;
+  padding-inline: 28px;
+
+  &_item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: $white;
+  }
+
+  &_button {
+    display: flex;
+    border-radius: 50px;
+    border: 2px solid var(--gray-gray-650, #27282F);
+    background: var(--gradient-button, linear-gradient(180deg, #AD2D14 0%, #F42E07 100%));
+    transition: all 0.3s ease-in-out;
+    padding: 6px;
+    align-items: flex-start;
+    margin: 6px;
+    color: #F5F5F5;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
