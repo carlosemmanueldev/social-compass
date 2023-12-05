@@ -10,7 +10,6 @@ import PrivateRoute from "./private-routes/PrivateRoute.tsx";
 function App() {
     return (
         <BrowserRouter>
-
                 <Routes>
                     <Route path="/" element={<Login/>}/>
                     <Route path="/register" element={<Register />} />
@@ -18,7 +17,6 @@ function App() {
                     <Route path="/profile" element={<PrivateRoute component={Profile}/>} />
                     <Route path="/logout" element={<PrivateRoute component={Logout}/>} />
                 </Routes>
-
         </BrowserRouter>
     );
 }

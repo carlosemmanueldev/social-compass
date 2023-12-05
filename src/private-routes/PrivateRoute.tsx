@@ -11,7 +11,7 @@ interface Props {
 const PrivateRoute: React.FC<Props> = ({ component: RouteComponent }) => {
     const isLogged = useSelector((state: RootState) => state.session.isLoggedIn);
 
-    return isLogged ? <RouteComponent /> : <Navigate to="/login" />;
+    return isLogged ? <RouteComponent /> : <Navigate to="/" />;
 }
 
 export default PrivateRoute;
